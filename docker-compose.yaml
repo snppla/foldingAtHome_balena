@@ -1,0 +1,7 @@
+version: '2'
+services:
+  fah:
+    build: fah
+    ports:
+      - "80:7396"
+
