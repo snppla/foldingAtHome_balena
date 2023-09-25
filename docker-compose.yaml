@@ -4,4 +4,8 @@ services:
     build: fah
     ports:
       - "80:7396"
+    volumes:
+      - fah_data:/opt/fah/data
 
+volumes:
+  fah_data:

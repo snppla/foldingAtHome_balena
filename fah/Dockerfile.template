@@ -6,6 +6,8 @@ RUN wget https://download.foldingathome.org/releases/public/release/fahclient/de
     apt-get install -y ./fahclient_7.6.21_arm64.deb && \
      rm fahclient_7.6.21_arm64.deb
 
+VOLUME [ "/opt/fah/data" ]
+
 WORKDIR /opt/fah
 COPY start.sh .
 
